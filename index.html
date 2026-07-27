@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞行躲避游戏 - Phaser.js</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入Phaser.js库 (v3.55.2版本) -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+</head>
+<body>
+    <!-- 游戏容器，Phaser会在这个div中渲染游戏画面 -->
+    <div id="game-container"></div>
+
+    <!-- ==================== 按加载顺序引入所有JavaScript文件 ==================== -->
+    
+    <!-- 1️⃣ 配置与常数文件 -->
+    <script src="src/config.js"></script>
+    <script src="src/constants.js"></script>
+
+    <!-- 2️⃣ 工具函数和基类 -->
+    <script src="src/utils/helpers.js"></script>
+    <script src="src/base/BaseScene.js"></script>
+
+    <!-- 3️⃣ 全局管理器 -->
+    <script src="src/managers/StateManager.js"></script>
+
+    <!-- 4️⃣ 游戏对象类 -->
+    <script src="src/objects/Player.js"></script>
+    <script src="src/objects/Meteor.js"></script>
+    <script src="src/objects/MeteorFragment.js"></script>
+
+    <!-- 5️⃣ UI组件 -->
+    <script src="src/ui/HUD.js"></script>
+
+    <!-- 6️⃣ 游戏场景 -->
+    <script src="src/scenes/BootScene.js"></script>
+    <script src="src/scenes/LoadScene.js"></script>
+    <script src="src/scenes/MenuScene.js"></script>
+    <script src="src/scenes/GameScene.js"></script>
+
+    <!-- 7️⃣ 游戏启动入口 -->
+    <script src="src/main.js"></script>
+</body>
+</html>
